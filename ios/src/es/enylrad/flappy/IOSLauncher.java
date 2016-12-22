@@ -5,13 +5,12 @@ import org.robovm.apple.uikit.UIApplication;
 
 import com.badlogic.gdx.backends.iosrobovm.IOSApplication;
 import com.badlogic.gdx.backends.iosrobovm.IOSApplicationConfiguration;
-import es.enylrad.flappy.MainFlappy;
 
 public class IOSLauncher extends IOSApplication.Delegate {
     @Override
     protected IOSApplication createApplication() {
         IOSApplicationConfiguration config = new IOSApplicationConfiguration();
-        return new IOSApplication(new MainFlappy(), config);
+        return new IOSApplication(new FlappyMain(), config);
     }
 
     public static void main(String[] argv) {

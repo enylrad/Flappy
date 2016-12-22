@@ -1,16 +1,14 @@
 package es.enylrad.flappy;
 
 import com.badlogic.gdx.ApplicationAdapter;
-import com.badlogic.gdx.Game;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.GL20;
-import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 
-import es.enylrad.flappy.States.GameStateManager;
-import es.enylrad.flappy.States.MenuState;
+import es.enylrad.flappy.states.GameStateManager;
+import es.enylrad.flappy.states.MenuState;
 
-public class MainFlappy extends ApplicationAdapter {
+public class FlappyMain extends ApplicationAdapter {
 
     public static final int WIDTH = 480;
     public static final int HEIGHT = 800;

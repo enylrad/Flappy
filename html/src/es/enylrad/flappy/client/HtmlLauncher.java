@@ -3,7 +3,7 @@ package es.enylrad.flappy.client;
 import com.badlogic.gdx.ApplicationListener;
 import com.badlogic.gdx.backends.gwt.GwtApplication;
 import com.badlogic.gdx.backends.gwt.GwtApplicationConfiguration;
-import es.enylrad.flappy.MainFlappy;
+import es.enylrad.flappy.FlappyMain;
 
 public class HtmlLauncher extends GwtApplication {
 
@@ -14,6 +14,6 @@ public class HtmlLauncher extends GwtApplication {
 
         @Override
         public ApplicationListener createApplicationListener () {
-                return new MainFlappy();
+                return new FlappyMain();
         }
 }
