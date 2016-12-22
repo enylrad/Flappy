@@ -1,4 +1,4 @@
-package es.enylrad.flappy.states;
+package es.enylrad.flappy.statesgame;
 
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.Texture;

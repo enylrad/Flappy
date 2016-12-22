@@ -5,8 +5,8 @@ import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 
-import es.enylrad.flappy.states.GameStateManager;
-import es.enylrad.flappy.states.MenuState;
+import es.enylrad.flappy.statesgame.GameStateManager;
+import es.enylrad.flappy.statesgame.MenuState;
 
 public class FlappyMain extends ApplicationAdapter {
 
