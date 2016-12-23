@@ -26,6 +26,7 @@ android/libs/armeabi-v7a/
 android/libs/arm64-v8a/
 android/libs/x86/
 android/libs/x86_64/
+/android/build/
 android/gen/
 .idea/
 *.ipr
