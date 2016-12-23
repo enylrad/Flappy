@@ -1,38 +1,34 @@
-package es.enylrad.flappy.statesgame;
+package es.enylrad.flappy.states;
 
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 
 import java.util.Stack;
 
-/**
- * Created by enylrad on 22/12/16.
- */
-
 public class GameStateManager {
     private Stack<State> states;
 
-    public GameStateManager(){
+    public GameStateManager() {
         states = new Stack<State>();
     }
 
-    public void push(State state){
+    public void push(State state) {
         states.push(state);
     }
 
-    public void pop(){
-        states.pop();
+    public void pop() {
+        states.pop().disponse();
     }
 
-    public void set(State state){
-        states.pop();
+    public void set(State state) {
+        states.pop().disponse();
         states.push(state);
     }
 
-    public void update(float dt){
+    public void update(float dt) {
         states.peek().update(dt);
     }
 
-    public void render(SpriteBatch sb){
+    public void render(SpriteBatch sb) {
         states.peek().render(sb);
     }
 }

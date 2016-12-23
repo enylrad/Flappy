@@ -1,4 +1,4 @@
-package es.enylrad.flappy.statesgame;
+package es.enylrad.flappy.states;
 
 
 import com.badlogic.gdx.graphics.OrthographicCamera;

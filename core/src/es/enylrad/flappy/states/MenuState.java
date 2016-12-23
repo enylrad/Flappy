@@ -13,16 +13,15 @@ public class MenuState extends State {
 
     public MenuState(GameStateManager gsm) {
         super(gsm);
+        cam.setToOrtho(false, FlappyMain.WIDTH / 2, FlappyMain.HEIGHT / 2);
         background = new Texture("bg.png");
         playBtn = new Texture("playbtn.png");
-        cam.setToOrtho(false, FlappyMain.WIDTH / 2, FlappyMain.HEIGHT / 2);
     }
 
     @Override
     public void handleInput() {
         if (Gdx.input.justTouched()) {
             gsm.set(new PlayState(gsm));
-            disponse();
         }
     }
 
@@ -35,8 +34,8 @@ public class MenuState extends State {
     public void render(SpriteBatch sb) {
         sb.setProjectionMatrix(cam.combined);
         sb.begin();
-        sb.draw(background, cam.position.x - (cam.viewportWidth / 2), 0);
-        sb.draw(playBtn, cam.position.x - (cam.viewportWidth/5), cam.position.y);
+        sb.draw(background, 0, 0);
+        sb.draw(playBtn, cam.position.x - playBtn.getWidth() / 2, cam.position.y);
         sb.end();
     }
 
@@ -44,5 +43,6 @@ public class MenuState extends State {
     public void disponse() {
         background.dispose();
         playBtn.dispose();
+        System.out.print("Menu State Disposed");
     }
 }
